@@ -1,1 +1,9 @@
-testing
+Hard x and y limits for camera movement.
+
+Camera is sibling node of character (maybe), managed by game manager script.
+
+Anytime character is touching floor, save the relative y location. 
+
+If jumps, camera only follows character if it passes a threshold of saved location +- 100 (or some value). 
+
+Will follow at character velocity.
