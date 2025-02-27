@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dp6p20i5p22aw"]
+[gd_scene load_steps=10 format=3 uid="uid://dp6p20i5p22aw"]
 
 [ext_resource type="Script" path="res://game_manager.gd" id="1_7i46i"]
 [ext_resource type="Texture2D" uid="uid://bjro4ml02g8v5" path="res://Green.png" id="2_a6ak6"]
@@ -7,12 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://tffn2vaq6bwj" path="res://scenes/collectible.tscn" id="5_ds1yg"]
 [ext_resource type="PackedScene" uid="uid://l8uiwnfcawla" path="res://scenes/finish.tscn" id="6_uheyu"]
 [ext_resource type="PackedScene" uid="uid://k0detl8sj7ir" path="res://scenes/level2.tscn" id="7_6pdqb"]
-
-[sub_resource type="Curve2D" id="Curve2D_jw177"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1300, 0)
-}
-point_count = 2
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e0x0t"]
 texture = ExtResource("3_81wrp")
@@ -203,19 +197,6 @@ sources/0 = SubResource("TileSetAtlasSource_e0x0t")
 unique_name_in_owner = true
 script = ExtResource("1_7i46i")
 
-[node name="Path2D" type="Path2D" parent="GameManager"]
-position = Vector2(650, 400)
-scale = Vector2(0.999999, 0.999999)
-curve = SubResource("Curve2D_jw177")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="GameManager/Path2D"]
-loop = false
-
-[node name="Camera2D" type="Camera2D" parent="GameManager/Path2D/PathFollow2D"]
-offset = Vector2(-55, -88)
-zoom = Vector2(0.9, 0.9)
-position_smoothing_enabled = true
-
 [node name="SceneObjects" type="Node" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="SceneObjects"]
@@ -235,6 +216,12 @@ layer_0/tile_data = PackedInt32Array(851968, 393216, 0, 851969, 458752, 0, 85197
 [node name="CharacterBody2D" parent="SceneObjects" instance=ExtResource("4_1ax1r")]
 unique_name_in_owner = true
 position = Vector2(220, 410)
+
+[node name="MovingCamera" type="Camera2D" parent="SceneObjects"]
+position = Vector2(46, -425)
+offset = Vector2(440, 820)
+zoom = Vector2(1.2, 1.2)
+position_smoothing_enabled = true
 
 [node name="Collectibles" type="Node" parent="SceneObjects"]
 
