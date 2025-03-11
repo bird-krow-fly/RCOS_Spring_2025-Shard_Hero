@@ -1,0 +1,26 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1741724108
+Cherries.png::CompressedTexture2D::8563963057282633848::1738707171::1740635994::1::::<><>::
+Cool Text - Jump Game 474913880295506.png::CompressedTexture2D::1721753336727382991::1738707171::1740635994::1::::<><>::
+End (Idle).png::CompressedTexture2D::1370842214918436680::1738707171::1740635994::1::::<><>::
+game_manager.gd::GDScript::-1::1740634409::0::1::::<>Node<>::
+Green.png::CompressedTexture2D::3054117172621672876::1738707171::1740635994::1::::<><>::
+icon.svg::CompressedTexture2D::4492448336551684865::1738707171::1740635994::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::2693781381298737331::1738707171::1740635994::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::18221031312389850::1738707171::1740635994::1::::<><>::
+Pink.png::CompressedTexture2D::5558477295627009126::1738707171::1740635994::1::::<><>::
+Run (32x32).png::CompressedTexture2D::8389055921727998392::1738707171::1740635994::1::::<><>::
+Terrain (16x16).png::CompressedTexture2D::6718902165830846134::1738707171::1740635994::1::::<><>::
+Yellow.png::CompressedTexture2D::326606714387780712::1738707171::1740635994::1::::<><>::
+::res://scenes/::1740635995
+camera_2d.gd::GDScript::-1::1739311456::0::1::::<>Camera2D<>::
+collectible.gd::GDScript::-1::1738707171::0::1::::<>Area2D<>::
+collectible.tscn::PackedScene::1344238168771458481::1740635633::0::1::::<><>::res://scenes/collectible.gd<>uid://duaphqyl813no::::res://Cherries.png
+finish.gd::GDScript::-1::1738707171::0::1::::<>Area2D<>::
+finish.tscn::PackedScene::841431547934933454::1740635633::0::1::::<><>::uid://tsbtocqbyy2c::::res://End (Idle).png<>res://scenes/finish.gd
+level1.tscn::PackedScene::8277050714178960266::1740635633::0::1::::<><>::res://game_manager.gd<>uid://bjro4ml02g8v5::::res://Green.png<>uid://c2yxlpur1g0ko::::res://Terrain (16x16).png<>uid://b4bkqx30x8rip::::res://scenes/main_character.tscn<>uid://tffn2vaq6bwj::::res://scenes/collectible.tscn<>uid://l8uiwnfcawla::::res://scenes/finish.tscn<>uid://k0detl8sj7ir::::res://scenes/level2.tscn
+level2.tscn::PackedScene::753688190846052585::1740635633::0::1::::<><>::res://game_manager.gd<>uid://ewhfut8hldm3::::res://Yellow.png<>uid://c2yxlpur1g0ko::::res://Terrain (16x16).png<>uid://b4bkqx30x8rip::::res://scenes/main_character.tscn<>uid://tffn2vaq6bwj::::res://scenes/collectible.tscn<>uid://l8uiwnfcawla::::res://scenes/finish.tscn<>uid://dbv8rfkbl2mpi::::res://scenes/main_menu.tscn
+main_character.gd::GDScript::-1::1738707171::0::1::::<>CharacterBody2D<>::
+main_character.tscn::PackedScene::4424598522039758203::1740635633::0::1::::<><>::res://scenes/main_character.gd<>uid://i3dk76sx7ba::::res://Jump (32x32).png<>uid://bem5gk1bk4j0v::::res://Idle (32x32).png<>uid://drryr4lk16065::::res://Run (32x32).png
+main_menu.gd::GDScript::-1::1738707171::0::1::::<>Node<>::
+main_menu.tscn::PackedScene::7274837124936272990::1740635995::0::1::::<><>::uid://clgtkrfgcfu3w::::res://Pink.png<>res://scenes/main_menu.gd<>uid://ysba47fiaabn::::res://Cool Text - Jump Game 474913880295506.png
